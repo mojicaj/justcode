@@ -1,0 +1,22 @@
+{
+  "name": "justcode",
+  "version": "1.0.0",
+  "description": "Random Project Selector for coding practice",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mojicaj/justcode.git"
+  },
+  "author": "Jason Mojica",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mojicaj/justcode/issues"
+  },
+  "homepage": "https://github.com/mojicaj/justcode#readme"
+}
