@@ -2,7 +2,7 @@
   min-height: 500px;
   text-align: center;
   background: #555;
-  /*background-image: url('../img/sky.jpg');*/
+  background-image: url('/img/code.jpg');
   background-size: cover;
 }
 
@@ -24,7 +24,7 @@
 
 .hero-content a {
   color: #fff;
-  border: 3px solid #fff;
+  border: 3px solid #1FCC50;
   border-radius: 3px;
   padding: 15px 30px;
   margin-right: 20px;
