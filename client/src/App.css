@@ -1,28 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch');
+
+h1 {
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+  background-color: #D66436;
+  width: 100%;
   color: white;
+  font-size: 3em;
+  font-family: 'Cabin Sketch', cursive;
 }
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.App-header a {
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
 }

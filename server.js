@@ -1,6 +1,11 @@
+// load environment variables
+require('dotenv').config();
+
 const express = require('express'),
   app = express(),
-  port = 5000;
+  port = 5000,
+  mongoose = require('mongoose');
+
 
 app.get('/api/projects', (req, res) => {
   const projects = [
@@ -11,5 +16,11 @@ app.get('/api/projects', (req, res) => {
 
   res.json(projects);
 });
+
+// connect to database
+mongoose.connect(process.env.DB_URI);
+
+// set routes
+app.use(require('./app/routes'));
 
 app.listen(port, () => console.log(`Server started on port ${port}`));
