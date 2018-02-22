@@ -17,6 +17,11 @@ app.get('/api/projects', (req, res) => {
   res.json(projects);
 });
 
+
+// static assets
+app.use(express.static(__dirname + '/public'));
+
+
 // connect to database
 mongoose.connect(process.env.DB_URI);
 
