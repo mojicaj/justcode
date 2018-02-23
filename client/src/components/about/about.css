@@ -1,0 +1,47 @@
+/*
+
+about
+about-content
+about-info
+about-tiers
+tiers toucans
+
+ */
+
+.about-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #D66436;
+}
+
+h3 {
+  color: #ED8230;
+}
+
+.tiers {
+  display: inline-block;
+  width: 30%;
+  height: 30vh;
+  margin: 0 10px;
+  padding: 0 20px;
+  border-radius: 10px;
+  vertical-align: top;
+  color: #FFF;
+  background: #ff5300;
+  background: -webkit-linear-gradient(top left,#ff5300,#d80000);
+  background: -moz-linear-gradient(top left,#ff5300,#d80000);
+  background: linear-gradient(top left,#ff5300,#d80000);
+}
+
+
+/*
+
+#FF530D
+#078975
+#8e8e8e
+border: 1px solid #D66436;
+
+ */
