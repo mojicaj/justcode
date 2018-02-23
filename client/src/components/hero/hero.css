@@ -1,5 +1,5 @@
 .hero {
-  min-height: 500px;
+  min-height: 800px;
   text-align: center;
   background: #555;
   background-image: url('/img/code.jpg');
@@ -8,7 +8,7 @@
 
 .hero-content {
   color: #fff;
-  padding-top: 130px;
+  padding-top: 100px;
   line-height: 1;
 }
 
@@ -19,7 +19,7 @@
 
 .hero-content p {
   font-size: 1.5em;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 
 .hero-content a {
