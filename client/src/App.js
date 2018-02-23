@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Hero from './components/hero/hero-main';
 import About from './components/about/about';
+import Footer from './components/footer/footer';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
 
         <Hero />
         <About />
+        <Footer />
 
       </div>
     );
