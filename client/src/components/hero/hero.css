@@ -19,11 +19,12 @@
 
 .hero-content p {
   font-size: 1.5em;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
-.hero-content a {
+.hero-content button {
   color: #fff;
+  background: none;
   border: 3px solid #1FCC50;
   border-radius: 3px;
   padding: 15px 30px;

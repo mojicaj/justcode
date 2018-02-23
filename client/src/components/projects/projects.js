@@ -1,8 +1,35 @@
 import React, { Component } from 'react';
 import './projects.css';
+import GetProject from './getproject';
+import AddProject from './addproject';
 
 class Projects extends Component {
-  constructor() {
+  close() {
+    this.props.close();
+  }
+
+  render() {
+    if (this.props.visible) {
+      return (
+        <div className="projects">
+          {(this.props.view) === 'get' && <GetProject />}
+          {(this.props.view) === 'add' && <AddProject />}
+
+          <button className="close" onClick={this.close.bind(this)}>Close</button>
+        </div>
+      )
+    } else {
+      return null;
+    }
+  }
+}
+
+export default Projects;
+
+
+/*
+
+constructor() {
     super();
     this.state = {
       projects: []
@@ -15,18 +42,11 @@ class Projects extends Component {
       .then(projects => this.setState({projects}, () => console.log('Projects fetched..', projects)));
   }
 
-  render() {
-    return (
-      <div>
-        <h2>Projects</h2>
-        <ul>
-          {this.state.projects.map(projects =>
-            <li key={projects.id}>{ projects.name } - { projects.description }</li>
-          )}
-        </ul>
-      </div>
-    );
-  }
-}
+<h2>Projects</h2>
+          <ul>
+            {this.state.projects.map(projects =>
+              <li key={projects.id}>{ projects.name } - { projects.description }</li>
+            )}
+          </ul>
 
-export default Projects;
+*/

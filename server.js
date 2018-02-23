@@ -9,9 +9,84 @@ const express = require('express'),
 
 app.get('/api/projects', (req, res) => {
   const projects = [
-    {id: 1, name: 'Tickybot', description: 'Create a clone of the Tickybot landing page'},
-    {id: 2, name: 'Gitlab', description: 'Create a clone of the Gitlab landing page'},
-    {id: 3, name: 'Atomist', description: 'Create a clone of Atomist'}
+    {
+    name: 'Tickybot Landing Page',
+    tier: 'One',
+    type: 'Clone',
+    link: 'https://tickybott.herokuapp.com/',
+    description: 'Create a clone of the Tickybot landing page'},
+
+  {
+    name: 'Gitlab Landing Page',
+    tier: 'One',
+    type: 'Clone',
+    link: 'https://about.gitlab.com/',
+    description: 'Create a clone of the Gitlab landing page'
+  },
+
+  {
+    name: 'Atomist',
+    tier: 'One',
+    type: 'Clone',
+    link: 'https://www.atomist.com/',
+    description: 'Create a clone of Atomist'
+  },
+
+  {
+    name: 'Donut',
+    tier: 'One',
+    type: 'Clone',
+    link: 'https://www.donut.ai/',
+    description: 'Create a clone of Donut'
+  },
+
+  {
+    name: 'Paypal',
+    tier: 'One',
+    type: 'Clone',
+    link: 'https://www.paypal.com/us/home',
+    description: 'Create a Paypal clone'
+  },
+
+  {
+    name: 'Trello',
+    tier: 'Two',
+    type: 'Clone',
+    link: 'https://trello.com/',
+    description: 'Create your own version Trello'
+  },
+
+  {
+    name: 'Chrome extension',
+    tier: 'Two',
+    type: 'Clone',
+    link: 'https://www.makeuseof.com/tag/12-gorgeous-chrome-new-tab-extensions-youve-probably-never-tried/',
+    description: 'Create your own extension for the Chrome browser'
+  },
+
+  {
+    name: 'Jobbatical',
+    tier: 'Three',
+    type: 'Clone',
+    link: 'https://jobbatical.com/',
+    description: 'Create your own version of Jobbatical'
+  },
+
+  {
+    name: 'Airbnb',
+    tier: 'Three',
+    type: 'Clone',
+    link: 'https://www.airbnb.com/',
+    description: 'Create your own version of Airbnb'
+  },
+
+  {
+    name: 'Twitter',
+    tier: 'Three',
+    type: 'Clone',
+    link: 'https://twitter.com/',
+    description: 'Create your own version of Twitter'
+  }
   ];
 
   res.json(projects);
